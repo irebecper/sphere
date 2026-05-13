@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>favoritos</title>
+  <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<body>
+<header class="sticky-header fade-in">
+    <div class="header-content">
+        <div class="logo">
+    <a href="index.html">
+        <img src="img/icon.svg" alt="sphere logo" class="logo-img">
+    </a>
+</div>
+        <nav>
+            <ul>
+                <li><a href="explorar.html">explorar</a></li>
+
+                <li id="navSaved">
+                    <a href="saved.html">favoritos</a>
+                </li>
+
+               <li>
+    <a href="#">novedades</a>
+    <ul class="submenu">
+        <li id="navJobs">
+            <a href="jobs.html">ofertas laborales</a>
+        </li>
+        <li><a href="articles.html">artículos</a></li>
+        <li><a href="entrevistas.html">entrevistas</a></li>
+    </ul>
+</li>
+
+<li>
+    <a href="suscripciones.html">suscripciones</a>
+</li>
+
+<li>
+    <a href="#">perfil</a>
+    <ul class="submenu">
+        <li id="navRegister">
+            <a href="register.html">registrarse/iniciar sesión</a>
+        </li>
+        <li id="navDashboard">
+            <a href="dashboard.html">mi perfil</a>
+        </li>
+        <li><a href="profile.html">configuración</a></li>
+        <li id="navLogout">
+            <a href="#" id="logoutBtn">cerrar sesión</a>
+        </li>
+    </ul>
+</li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+ 
+
+<main class="explore">
+
+
+  <div class="filters-wrapper">
+
+  
+  <div class="filters-trigger" id="filtersToggle">
+    filtros › 
+  </div>
+
+ 
+  <div id="filtersContent">
+
+    <div id="filters">
+
+      <select id="filterCategory">
+        <option value="">categorías</option>
+        <option value="diseño gráfico">diseño gráfico</option>
+        <option value="modelado 3d">modelado 3D</option>
+        <option value="arquitectura">arquitectura</option>
+        <option value="ilustración">ilustración</option>
+        <option value="animación">animación</option>
+        <option value="interiorismo">interiorismo</option>
+      </select>
+
+      <select id="filterStyle">
+        <option value="">disciplinas</option>
+      </select>
+
+      <div class="custom-select" id="tagsDropdown"> <div class="select-trigger">colores</div> <div class="select-options" id="filterTags"> <label><input type="checkbox" value="rojo"> Rojo</label> <label><input type="checkbox" value="azul"> Azul</label> <label><input type="checkbox" value="verde"> Verde</label> <label><input type="checkbox" value="amarillo"> Amarillo</label> <label><input type="checkbox" value="negro"> Negro</label> <label><input type="checkbox" value="blanco"> Blanco</label> <label><input type="checkbox" value="gris"> Gris</label> <label><input type="checkbox" value="rosa"> Rosa</label> <label><input type="checkbox" value="morado"> Morado</label> <label><input type="checkbox" value="naranja"> Naranja</label> </div> </div>
+
+  </div>
+</div>
+
+<div id="feedContainer"></div>
+</main>
+  
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script type="module" src="saved.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

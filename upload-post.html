@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>publicar post</title>
+  <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<body>
+<header class="sticky-header fade-in">
+    <div class="header-content">
+        <div class="logo">
+    <a href="index.html">
+        <img src="img/icon.svg" alt="sphere logo" class="logo-img">
+    </a>
+</div>
+        <nav>
+            <ul>
+                <li><a href="explorar.html">explorar</a></li>
+
+                <li id="navSaved">
+                    <a href="saved.html">favoritos</a>
+                </li>
+
+               <li>
+    <a href="#">novedades</a>
+    <ul class="submenu">
+        <li id="navJobs">
+            <a href="jobs.html">ofertas laborales</a>
+        </li>
+        <li><a href="articles.html">artículos</a></li>
+        <li><a href="entrevistas.html">entrevistas</a></li>
+    </ul>
+</li>
+
+<li>
+    <a href="suscripciones.html">suscripciones</a>
+</li>
+
+<li>
+    <a href="#">perfil</a>
+    <ul class="submenu">
+        <li id="navRegister">
+            <a href="register.html">registrarse/iniciar sesión</a>
+        </li>
+        <li id="navDashboard">
+            <a href="dashboard.html">mi perfil</a>
+        </li>
+        <li><a href="profile.html">configuración</a></li>
+        <li id="navLogout">
+            <a href="#" id="logoutBtn">cerrar sesión</a>
+        </li>
+    </ul>
+</li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="ui-card wide">
+  <h2>sube tu post</h2>
+
+  <input type="file" id="postImage" accept="image/*,video/mp4">
+
+<input 
+  type="text" 
+  id="postImageUrl" 
+  placeholder="pega una URL de imagen o vídeo"
+>
+
+<div class="inline-selects">
+  <select id="postCategory">
+  <option value="">selecciona una categoría</option>
+  <option value="diseño gráfico">diseño gráfico</option>
+  <option value="modelado 3d">modelado 3D</option>
+  <option value="arquitectura">arquitectura</option>
+  <option value="ilustración">ilustración</option>
+  <option value="animación">animación</option>
+  <option value="interiorismo">interiorismo</option>
+</select>
+
+<select id="postStyle">
+  <option value="">selecciona una disciplina</option>
+</select>
+
+<div class="custom-select" id="tagsDropdown">
+  <div class="select-trigger">colores</div>
+
+  <div class="select-options" id="tagsContainer">
+    <label><input type="checkbox" value="rojo"> rojo</label>
+    <label><input type="checkbox" value="azul"> azul</label>
+    <label><input type="checkbox" value="verde"> verde</label>
+    <label><input type="checkbox" value="amarillo"> amarillo</label>
+    <label><input type="checkbox" value="negro"> negro</label>
+    <label><input type="checkbox" value="blanco"> blanco</label>
+    <label><input type="checkbox" value="gris"> gris</label>
+    <label><input type="checkbox" value="rosa"> rosa</label>
+    <label><input type="checkbox" value="morado"> morado</label>
+    <label><input type="checkbox" value="naranja"> naranja</label>
+    <label><input type="checkbox" value="turquesa"> turquesa</label>
+    <label><input type="checkbox" value="dorado"> dorado</label>
+    <label><input type="checkbox" value="plateado"> plateado</label>
+  </div>
+</div>
+</div>
+  <button id="uploadPostBtn">publicar</button>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script type="module" src="upload-post.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

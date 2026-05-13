@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>suscripciones</title>
+      <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+ <header class="sticky-header fade-in">
+    <div class="header-content">
+        <div class="logo">
+    <a href="index.html">
+        <img src="img/icon.svg" alt="sphere logo" class="logo-img">
+    </a>
+</div>
+        <nav>
+            <ul>
+                <li><a href="explorar.html">explorar</a></li>
+
+                <li id="navSaved">
+                    <a href="saved.html">favoritos</a>
+                </li>
+
+               <li>
+    <a href="#">novedades</a>
+    <ul class="submenu">
+        <li id="navJobs">
+            <a href="jobs.html">ofertas laborales</a>
+        </li>
+        <li><a href="articles.html">artículos</a></li>
+        <li><a href="entrevistas.html">entrevistas</a></li>
+    </ul>
+</li>
+
+<li>
+    <a href="suscripciones.html">suscripciones</a>
+</li>
+
+<li>
+    <a href="#">perfil</a>
+    <ul class="submenu">
+        <li id="navRegister">
+            <a href="register.html">registrarse/iniciar sesión</a>
+        </li>
+        <li id="navDashboard">
+            <a href="dashboard.html">mi perfil</a>
+        </li>
+        <li><a href="profile.html">configuración</a></li>
+        <li id="navLogout">
+            <a href="#" id="logoutBtn">cerrar sesión</a>
+        </li>
+    </ul>
+</li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    
+<section class="seccion-suscripciones">
+
+  <h2 class="titulo-suscripciones">planes de suscripción</h2>
+  <p class="subtitulo-suscripciones">
+    elige el plan que mejor se adapte a tus necesidades
+  </p>
+
+  <div class="contenedor-tarjetas">
+
+    <div class="tarjeta-suscripcion">
+
+      <div class="cabecera-tarjeta">
+        <h3 class="nombre-plan">básico</h3>
+
+        <div class="precio-plan">
+          <span class="cantidad">4,99€</span>
+          <span class="periodo">/mes</span>
+        </div>
+      </div>
+
+      <div class="contenido-tarjeta">
+        <ul class="lista-caracteristicas">
+          <li class="caracteristica">✓ sin anuncios</li>
+          <li class="caracteristica">✓ favoritos ilimitados</li>
+          <li class="caracteristica">✓ acceso anticipado a novedades</li>
+          <li class="caracteristica">✓ insignia supporter en el perfil</li>
+
+          <li class="caracteristica desactivado">
+            ✗ prioridad en resultados
+          </li>
+
+          <li class="caracteristica desactivado">
+            ✗ estadísticas avanzadas
+          </li>
+        </ul>
+      </div>
+
+      <button class="boton-suscripcion">
+        elegir plan
+      </button>
+
+    </div>
+
+    
+    <div class="tarjeta-suscripcion plan-recomendado">
+
+      <div class="etiqueta-recomendado">
+        más Popular
+      </div>
+
+      <div class="cabecera-tarjeta">
+        <h3 class="nombre-plan">pro</h3>
+
+        <div class="precio-plan">
+          <span class="cantidad">9,99€</span>
+          <span class="periodo">/mes</span>
+        </div>
+      </div>
+
+      <div class="contenido-tarjeta">
+        <ul class="lista-caracteristicas">
+          <li class="caracteristica">
+            ✓ todo lo incluido en básico
+          </li>
+
+          <li class="caracteristica">
+            ✓ prioridad en resultados de búsqueda
+          </li>
+
+          <li class="caracteristica">
+            ✓ estadísticas del perfil
+          </li>
+
+          <li class="caracteristica">
+            ✓ personalización avanzada del perfil
+          </li>
+
+          <li class="caracteristica">
+            ✓ proyectos destacados en explorar
+          </li>
+
+          <li class="caracteristica desactivado">
+            ✗ acceso a herramientas beta
+          </li>
+        </ul>
+      </div>
+
+      <button class="boton-suscripcion boton-recomendado">
+        elegir plan
+      </button>
+
+    </div>
+
+    
+    <div class="tarjeta-suscripcion">
+
+      <div class="cabecera-tarjeta">
+        <h3 class="nombre-plan">premium</h3>
+
+        <div class="precio-plan">
+          <span class="cantidad">19,99€</span>
+          <span class="periodo">/mes</span>
+        </div>
+      </div>
+
+      <div class="contenido-tarjeta">
+        <ul class="lista-caracteristicas">
+
+          <li class="caracteristica">
+            ✓ todo lo incluido en pro
+          </li>
+
+          <li class="caracteristica">
+            ✓ acceso a funciones experimentales
+          </li>
+
+          <li class="caracteristica">
+            ✓ perfil verificado
+          </li>
+
+          <li class="caracteristica">
+            ✓ mayor visibilidad para proyectos
+          </li>
+
+          <li class="caracteristica">
+            ✓ acceso prioritario a ofertas laborales
+          </li>
+
+          <li class="caracteristica">
+            ✓ soporte prioritario
+          </li>
+
+        </ul>
+      </div>
+
+      <button class="boton-suscripcion">
+        elegir plan
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+<p class="subtitulo-suscripciones">*esto tan solo es un prototipo de simulación*</p>
+<footer class="footer">
+    <div class="contenedor-footer">
+
+        <div class="logo-footer">
+    <a href="index.html">
+        <img src="img/icon.svg" alt="sphere logo" class="logo-img footer-logo">
+    </a>
+    <p class="copyright">© 2026 Sphere</p>
+</div>
+        
+       <div class="enlaces-legales">
+  <a href="#" class="enlace-legal" data-legal="legal">aviso legal</a>
+  <a href="#" class="enlace-legal" data-legal="privacy">política de privacidad</a>
+  <a href="#" class="enlace-legal" data-legal="terms">términos de uso</a>
+</div>
+</footer>
+
+<div id="legalModal" class="confirm-overlay">
+  <div class="ui-card legal-box">
+    <button id="closeLegal">✕</button>
+    <div id="legalContent"></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
